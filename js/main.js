@@ -4,7 +4,6 @@ import { reviews } from "./review.js";
 import ScrollReveal from './scroll.reveral.min.js'
 import { favoriteCart,activeHeart,activeHeartDefault,makeFavoriteCart } from "./FavoriteCart.js";
 
-
 // Featured Books
 const featured = document.querySelector('.featured__images');
 let featuredHTML = '';
