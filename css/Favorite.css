@@ -1,0 +1,107 @@
+/* ================= NOMALIZE CSS ============================*/
+@import url(./normalize.css);
+@import url(./styles.css);
+
+.favoriteCart{
+    padding: 3rem 2rem
+}
+.favoriteCart__card{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-border);
+    padding: 3rem 2rem;
+    position: relative;
+}
+.favoriteCart__data{
+    text-align: center;
+    padding-block: 2rem;
+}
+.favoriteCart__title{
+    font-size: 2.5rem;
+    height: 5rem;
+}
+.favoriteCart__img{
+    width: 180px;
+    object-fit: cover;
+}
+.favoriteCart__price{
+    font-size: 2rem;
+    color: var(--color-secondary);
+    padding-block: 1rem;
+}
+.favoriteCart__discription{
+    height: 18rem;
+    overflow: scroll;
+    border-block: 2px solid var(--color-border);
+    padding: 1rem;
+    padding-block: 1rem;
+}
+.favoriteCart__close{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.favoriteCart__defaultMessage{
+    font-size: 2rem;
+}
+
+/* BreakPoints */
+@media screen and (min-width: 425px) {
+    .favoriteCart__card{
+        width: 400px;
+        margin-inline: auto;
+    } 
+}
+
+@media screen and (min-width: 700px) {
+    .favoriteCart{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        width: 700px;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    .favoriteCart__card{
+        width: 340px;
+    } 
+}
+@media screen and (min-width: 780px) {
+    .favoriteCart{
+       grid-template-columns: initial;
+       grid-auto-rows: 400px;
+       row-gap: 2rem;
+       padding: 0;
+    }
+    .favoriteCart__card{
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+    }
+    .favoriteCart__img{
+        width: 180px;
+    }
+    .favoriteCart__price{
+        text-align: end;
+        padding-right: 2rem;
+    }
+}
+@media screen and (min-width: 1120px){
+    .favoriteCart{
+        width: 900px;
+        padding-top: 2rem;
+    }
+    .favoriteCart__card{
+        max-width: initial;
+        width: 900;
+    }
+    .favoriteCart__title{
+        font-size: 3.5rem;
+    }
+}

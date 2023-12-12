@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar Menu</title>
+
+    <!--=================FAVICON======================  -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- ============== REMIXICONS ========================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ==================SWIPER CSS========================== -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- ==================CSS========================== -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- =====================HEADER & NAV====================== -->
+    <header class="header" id="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <i class="ri-book-3-line header__logo-icon"></i>
+                <span class="header__logo-title">E-Book</span>
+            </a>
+        </div>
+        <div class="header__menu">
+            <ul class="header__list grid">
+                <div class="header__item">
+                    <li class="header__item-text">
+                        <a href="#home" class="header__link">
+                            <i class="ri-home-line"></i>
+                            <p>Home</p>
+                        </a>
+                        </li>   
+                </div>
+                <div class="header__item">
+                    <li class="header__item-text">
+                            <a href="#featured" class="header__link">
+                            <i class="ri-book-3-line"></i>
+                            <p>Featured</p>
+                        </a>
+                        </li>
+                </div>
+                <div class="header__item">
+                    <li class="header__item-text">
+                            <a href="#discount" class="header__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <p>Discount</p>
+                        </a>
+                        </li>
+                </div>
+                <div class="header__item">
+                    <li class="header__item-text">
+                            <a href="#newbooks" class="header__link">
+                            <i class="ri-bookmark-line"></i>
+                            <p>New Books</p>
+                        </a>
+                        </li>
+                </div>
+                <div class="header__item">
+                    <li class="header__item-text">
+                            <a href="#testimonial" class="header__link">
+                            <i class="ri-message-3-line"></i>
+                            <p>Testimonial</p>
+                            </a>
+                        </li>
+                </div>
+            </ul>
+        </div>
+        <div class="header__group">
+            <i class="ri-search-line" id="search-open"></i>
+            <i class="ri-user-line" id="login-open"></i>
+            <div class="header__group-favorite" >
+                <a href = './Favorite.html'><i class="ri-heart-3-line"></i></a>
+                <p class="favorite-number">2</p>
+            </div>
+            <i class="ri-moon-line" id="theme-button"></i>
+        </div>
+    </header>
+
+    <!-- ===================== SEARCH ====================== -->
+    <div class="search form" id="search">
+        <div class="container">
+            <i class="ri-close-line form__close" id="search-close"></i>
+            <div class="search__group">
+                <i class="ri-search-line search__icon"></i>
+                <input type="text" placeholder="What are you looking for?" class="search__input">
+            </div>
+        </div>
+    </div>
+    
+    <!-- ===================== LOGIN ====================== -->
+    <div class="login form" id="login">
+        <div class="container">
+            <i class="ri-close-line form__close" id="login-close"></i>
+            <form action="" class="login__form">
+                <h2 class="login__title">Log In</h2>
+                <div class="form__div">
+                    <label class="form__label" for="email">E-mail</label>
+                    <input type="email" placeholder="Write your email" class="form__input">
+                </div>
+                <div class="form__div">
+                    <label class="form__label" for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" class="form__input">
+                </div>
+                <div class="form__footer">
+                    <p class="form__signup">
+                        You do not have an account?
+                        <a href="#" id="signup">Sign up</a>
+                    </p>
+                    <a href="#" class="form__forgot">You forgot your password</a>
+                </div>
+                <button class="form__btn btn">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <!-- ===================== HOME ====================== -->
+        <section class="home container section" id="home">
+            <div class="home__face grid">
+                <div class="home__header">
+                    <h2 class="home__heading">Browse & <br> Select E-Books</h2>
+                    <p class="home__discription">Find the best e-books from your favorite writers, explore hundreds of books with all possible categories, take advantage of the 50% discount and much more.</p>
+                    <button class="home__btn btn">Explore Now</button>
+                </div>
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="images/home-book-1.png" alt="book">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="images/home-book-2.png" alt="book">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="images/home-book-3.png" alt="book">
+                            </article>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="home__footer grid">
+                <div class="home__group">
+                    <i class="ri-truck-line home__group-icon"></i>
+                    <h4 class="home__group-title">Free Shipping</h4>
+                    <p class="home__group-discription">Order More Than $100</p>
+                </div>
+                <div class="home__group">
+                    <i class="ri-lock-2-line home__group-icon"></i>
+                    <h4 class="home__group-title">Secure Payment</h4>
+                    <p class="home__group-discription">100% Secure Payment</p>
+                </div>
+                <div class="home__group">
+                    <i class="ri-customer-service-2-line home__group-icon"></i>
+                    <h4 class="home__group-title">24/7 Support</h4>
+                    <p class="home__group-discription">Call us anytime</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- ===================== FEATURED ====================== -->
+
+         <section class="featured container section" id="featured">
+            <h3 class="featured__heading">Featured Books</h3>
+            <div class="featured__images featured__swiper swiper">
+                
+            </div>
+         </section>
+
+          <!-- ===================== DISCOUNT ====================== -->
+          <section class="discount container section grid" id="discount">
+            <div class="home__header discount__header">
+                <h3 class="home__heading">Up To 50% Discount</h3>
+                <p class="home__discription">Take advantage of the discount days we have for you, buy books from your favorite writers, the more you buy, the more discounts we have for you.</p>
+                <button class="featured__btn btn">Shop Now</button>
+            </div>
+            <div class="discount__images">
+                <img src="images/discount-book-1.png" alt="book" class="discount__img1">
+                <img src="images/discount-book-2.png" alt="book" class="discount__img2">
+            </div>
+          </section>
+
+        <!-- ===================== NEWBOOKS ====================== -->
+          <section class="newbooks section" id="newbooks">
+            <div class="container">
+                <h3 class="newbooks__title">New Books</h3>
+                <div class="newbooks__images1 newbooks__swiper">
+                    
+                </div>
+                <div class="newbooks__images2 newbooks__swiper">
+                    
+                </div>
+            </div>
+
+            <div class="subscribe container">
+                <img src="images/join-bg.jpg" alt="image" class="subscribe__bg">
+                <h3 class="subscribe__title">Subscribe To Receive<br>
+                    The Latest Updates</h3>
+                <div class="subscribe__group">
+                    <input type="email" placeholder="Enter Email" class="subscribe__email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+          </section>
+
+        <!-- ===================== TESTIMONIAL ====================== -->
+          <section class="testimonial container section" id="testimonial">
+            <h3 class="testimonial__title">Customer Opinions</h3>
+            <div class="testimonial__cards swiper testimonial__swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/testimonial-perfil-1.png" alt="customer" class="testimonial__img">
+                        <div class="testimonial__review">
+                            <h4 class="testimonial__name">Rial Loz</h4>
+                            <p href="" class="testimonial__text">
+                                The best website to buy books,the purchase is very easy to make and has great discounts.
+                            </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-half-s-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/testimonial-perfil-1.png" alt="customer" class="testimonial__img">
+                        <div class="testimonial__review">
+                            <h4 class="testimonial__name">Rial Loz</h4>
+                            <p href="" class="testimonial__text">
+                                The best website to buy books,the purchase is very easy to make and has great discounts.
+                            </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-half-s-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="images/testimonial-perfil-1.png" alt="customer" class="testimonial__img">
+                        <div class="testimonial__review">
+                            <h4 class="testimonial__name">Rial Loz</h4>
+                            <p href="" class="testimonial__text">
+                                The best website to buy books,the purchase is very easy to make and has great discounts.
+                            </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-star-half-s-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <footer class="footer container">
+            <div class="footer__face grid">
+                <div class="footer__header">
+                    <div class="footer__logo">
+                        <i class="ri-book-3-line footer__logo-icon"></i>
+                        <span class="footer__logo-title">E-Book</span>
+                    </div>
+                    <p class="footer__discribe">
+                        Find and explore the best<br>
+                        eBooks from all your<br>
+                        favorite writers.<br>
+                    </p>
+                </div>
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h4 class="footer__data-title">About</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Awards</li>
+                            <li class="footer__item">FAQs</li>
+                            <li class="footer__item">Privacy policy</li>
+                            <li class="footer__item">Terms of services</li>
+                        </ul>
+                    </div>
+                    <div class="footer__data">
+                        <h4 class="footer__data-title">Company</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Blogs</li>
+                            <li class="footer__item">Community</li>
+                            <li class="footer__item">Our team</li>
+                            <li class="footer__item">Help Center</li>
+                        </ul>
+                    </div>
+                    <div class="footer__data">
+                        <h4 class="footer__data-title">Contact</h4>
+                        <ul class="footer__list">
+                            <p>Av. Hacienda<br>
+                                Lima 4321, Perú</p>
+                            <p>e.book@email.com</p>
+                            <p>0987-654-321</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a target="_blank" href="https://www.facebook.com/"><i class="ri-facebook-circle-line footer__icon"></i></a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="ri-instagram-line footer__icon"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="ri-twitter-x-line footer__icon"></i></a>
+            </div>
+                <p class=footer__copy>© All Rights Reserved By Bedimcode</p>
+          </footer>
+
+          <!-- ===================== SCROLL REVEAL ====================== -->
+          <script type="module" src="js/scroll.reveral.min.js"></script>
+          <!-- ===================== SCROLL UP BAR ====================== -->
+          <a  href="#" class="scrollUp" id="scrollUp">
+            <i class="ri-arrow-up-line"></i>
+          </a>
+    </main>
+`
+
+
+
+
+
+
+
+
+
+    <!-- =====================SCROLL UP====================== -->
+
+     <!-- =====================RELAX JS====================== -->
+
+     <!-- ===================== GSAP====================== -->
+
+     <!-- =====================SCROLLREVERAL====================== -->
+     <!-- =====================SWIPER JS====================== -->
+     <script src="js/swiper-bundle.min.js"></script>
+     <!-- =====================MAIN JS====================== -->
+     <script type="module" src="js/main.js"></script>
+</body>
+</html>
