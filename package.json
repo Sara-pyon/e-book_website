@@ -13,9 +13,5 @@
   "devDependencies": {
     "parcel": "^2.10.3",
     "parcel-reporter-static-files-copy": "^1.5.3"
-  },
-  "staticFiles": {
-    "staticPath": "images",
-    "watcherGlob": "**"
   }
 }

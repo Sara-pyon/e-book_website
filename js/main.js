@@ -3,6 +3,7 @@ import { makingStars } from "./stars.js";
 import { reviews } from "./review.js";
 import ScrollReveal from './scroll.reveral.min.js'
 import { favoriteCart,activeHeart,activeHeartDefault,makeFavoriteCart } from "./FavoriteCart.js";
+import { book1, book10, book2, book3, book4, book5, book6, book7, book8, book9, discountbook1, discountbook2, favicon, homebook1, homebook2, homebook3, homebook4, joinbg, testimonialperfil1, testimonialperfil2, testimonialperfil3, testimonialperfil4 } from '../images/index.js'
 
 // Featured Books
 const featured = document.querySelector('.featured__images');

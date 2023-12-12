@@ -1,4 +1,3 @@
-
 export const products = [{
     id: '3iy5peu',
     image: 'images/book-1.png',

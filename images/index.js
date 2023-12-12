@@ -1,0 +1,24 @@
+const book1 = require('./book-1.png');
+const book10 = require('./book-10.png');
+const book2 = require('./book-2.png');
+const book3 = require('./book-3.png');
+const book4 = require('./book-4.png');
+const book5 = require('./book-5.png');
+const book6 = require('./book-6.png');
+const book7 = require('./book-7.png');
+const book8 = require('./book-8.png');
+const book9 = require('./book-9.png');
+const discountbook1 = require('./discount-book-1.png');
+const discountbook2 = require('./discount-book-2.png');
+const favicon = require('./favicon.png');
+const homebook1 = require('./home-book-1.png');
+const homebook2 = require('./home-book-2.png');
+const homebook3 = require('./home-book-3.png');
+const homebook4 = require('./home-book-4.png');
+const joinbg = require('./join-bg.jpg');
+const testimonialperfil1 = require('./testimonial-perfil-1.png');
+const testimonialperfil2 = require('./testimonial-perfil-2.png');
+const testimonialperfil3 = require('./testimonial-perfil-3.png');
+const testimonialperfil4 = require('./testimonial-perfil-4.png');
+
+module.exports = { book1, book10, book2, book3, book4, book5, book6, book7, book8, book9, discountbook1, discountbook2, favicon, homebook1, homebook2, homebook3, homebook4, joinbg, testimonialperfil1, testimonialperfil2, testimonialperfil3, testimonialperfil4 };
