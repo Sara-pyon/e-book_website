@@ -1,0 +1,6 @@
+{
+    "staticFiles": {
+      "staticDirectory": "images",
+      "outputPath": "dist"
+    }
+  }
